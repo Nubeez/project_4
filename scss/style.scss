@@ -15,6 +15,9 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0 auto;
+}
 header {
   width: 1170px;
   height: 96px;
@@ -30,9 +33,12 @@ header {
   justify-content: flex-start;
   li {
     width: 100%;
-    padding-left: 27px;
+    padding-left: 37px;
     font-size: 15px;
     font-weight: bold;
+  }
+  a {
+    color: black;
   }
 }
 #Search_wrap {
@@ -52,9 +58,12 @@ header {
   .Search::placeholder {
     color: rgb(146, 146, 146);
   }
+  .Search:focus {
+    outline: none;
+  }
   .Magnifier {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 28%;
     transform: translateX(100%);
   }
@@ -65,4 +74,30 @@ header {
   .event2 {
     margin-left: 25px;
   }
+}
+#wrap {
+  width: 100%;
+  .sub_wrap {
+    width: 993px;
+    margin: 0 auto;
+    padding: 25px 72px 20px 120px;
+    .sub_tab {
+      .icon_tab {
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 18px;
+        padding: 6px 12px 8px;
+        text-align: center;
+        font-size: 8.8pt;
+      }
+    }
+  }
+}
+.on {
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 18px;
+  padding: 6px 12px 8px;
+  text-align: center;
+  font-size: 8.8pt;
 }
