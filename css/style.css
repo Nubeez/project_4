@@ -18,16 +18,15 @@ body {
 }
 
 header {
-  width: 1170px;
+  width: 1200px;
   height: 96px;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding: 0px 30px;
 }
 
 #Menu_wrap {
-  width: 47%;
+  width: 35%;
   display: flex;
   justify-content: flex-start;
 }
@@ -53,12 +52,8 @@ header {
   border-radius: 30px;
   padding: 9px;
   font-size: 11.2px;
-  margin-left: 50px;
 }
 #Search_wrap .Search::-moz-placeholder {
-  color: rgb(146, 146, 146);
-}
-#Search_wrap .Search:-ms-input-placeholder {
   color: rgb(146, 146, 146);
 }
 #Search_wrap .Search::placeholder {
@@ -69,12 +64,15 @@ header {
 }
 #Search_wrap .Magnifier {
   position: absolute;
-  top: 23%;
-  left: 28%;
+  top: 25%;
+  left: 25%;
   transform: translateX(100%);
 }
 #Search_wrap .event1 {
-  width: 22%;
+  width: 145px;
+}
+#Search_wrap .event1 img {
+  width: 100%;
   margin-left: 10px;
 }
 #Search_wrap .event2 {
@@ -105,4 +103,65 @@ header {
   padding: 6px 12px 8px;
   text-align: center;
   font-size: 8.8pt;
+}
+
+#slide {
+  width: 950px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#slide .prev {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  color: #fff;
+  display: block;
+  transform: translateX(50%);
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  z-index: 5;
+}
+#slide .next {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  color: #fff;
+  display: block;
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  z-index: 5;
+}
+
+.panel {
+  width: 3800px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+.panel li {
+  width: 950px;
+  height: 400px;
+}
+.panel li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev,
+.next:hover {
+  cursor: pointer;
 }
