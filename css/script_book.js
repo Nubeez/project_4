@@ -25,7 +25,7 @@ $(function () {
           .append("<h5 class='bk_1'>" + str1 + "</h5>");
         $(".box" + i)
           .eq(j)
-          .append("<h6 class='bk_2'>" + books.documents[j].authors + "</h6>");
+          .append("<h6 class='bk_1'>" + books.documents[j].authors + "</h6>");
       }
     });
   }

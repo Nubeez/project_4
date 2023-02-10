@@ -31,9 +31,9 @@ header {
 }
 
 .title1 {
-  padding: 20px 0;
   font-size: 13pt;
   font-weight: bold;
+  padding: 15px 0;
 }
 
 #Menu_wrap {
@@ -96,7 +96,7 @@ header {
 #wrap .sub_wrap {
   width: 993px;
   margin: 0 auto;
-  padding: 25px 72px 20px 120px;
+  padding: 25px 72px 25px 120px;
 }
 #wrap .sub_wrap .sub_tab .icon_tab {
   border: 1px solid rgb(214, 214, 214);
@@ -184,7 +184,9 @@ header {
   color: white;
   font-size: 16px;
   transform: translate(-100%, -50%);
-  opacity: 0;
+}
+.panel li b.show {
+  opacity: 1;
 }
 .panel li img {
   width: 100%;
@@ -198,12 +200,10 @@ header {
 
 #New {
   width: 950px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto;
+  height: 310px;
+  margin: 0 auto;
 }
 #New .box_wrap {
-  width: 1200px;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
@@ -218,17 +218,16 @@ header {
   text-align: center;
 }
 #New .box_wrap .boxs .box img {
+  width: 100%;
   border-radius: 4px;
 }
 
 #wait {
   width: 950px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 310px;
   margin: 20px auto;
 }
 #wait .box_wrap {
-  width: 1200px;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
@@ -244,11 +243,13 @@ header {
   border-radius: 3px;
 }
 #wait .box_wrap .boxs .box img {
+  width: 100%;
   border-radius: 4px;
 }
 
 #popularity {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -304,6 +305,7 @@ header {
 
 #update_bk {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -325,11 +327,13 @@ header {
   border-radius: 4px;
 }
 #update_bk .box_wrap .boxs .box img {
+  width: 100%;
   border-radius: 4px;
 }
 
 #event_wrap {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -361,7 +365,7 @@ header {
 
 footer {
   width: 950px;
-  height: 200px;
+  height: 150px;
   margin: 0 auto;
   padding: 50px;
 }
@@ -371,6 +375,7 @@ footer .Introduction {
 footer .Information_bottom {
   font-size: 9pt;
   line-height: 20px;
+  color: rgba(143, 140, 140, 0.8117647059);
 }
 
 .bk_1 {
@@ -378,11 +383,7 @@ footer .Information_bottom {
   text-align: left;
 }
 
-.bk_2 {
-  font-size: 9pt;
-  text-align: left;
-}
-
-.bk_3 {
-  font-size: 9pt;
+.ft_color {
+  color: rgba(143, 140, 140, 0.8117647059);
+  text-decoration: underline;
 }

@@ -31,9 +31,9 @@ header {
   background-color: white;
 }
 .title1 {
-  padding: 20px 0;
   font-size: 13pt;
   font-weight: bold;
+  padding: 15px 0;
 }
 #Menu_wrap {
   width: 35%;
@@ -90,7 +90,7 @@ header {
   .sub_wrap {
     width: 993px;
     margin: 0 auto;
-    padding: 25px 72px 20px 120px;
+    padding: 25px 72px 25px 120px;
     .sub_tab {
       .icon_tab {
         border: 1px solid rgb(214, 214, 214);
@@ -176,7 +176,10 @@ header {
       color: white;
       font-size: 16px;
       transform: translate(-100%, -50%);
-      opacity: 0;
+      //   opacity: 0;
+      &.show {
+        opacity: 1;
+      }
     }
     img {
       width: 100%;
@@ -190,11 +193,9 @@ header {
 }
 #New {
   width: 950px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto;
+  height: 310px;
+  margin: 0 auto;
   .box_wrap {
-    width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +207,7 @@ header {
         height: 200px;
         text-align: center;
         img {
+          width: 100%;
           border-radius: 4px;
         }
       }
@@ -214,11 +216,9 @@ header {
 }
 #wait {
   width: 950px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 310px;
   margin: 20px auto;
   .box_wrap {
-    width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -231,6 +231,7 @@ header {
         text-align: center;
         border-radius: 3px;
         img {
+          width: 100%;
           border-radius: 4px;
         }
       }
@@ -239,6 +240,7 @@ header {
 }
 #popularity {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -295,6 +297,7 @@ header {
 
 #update_bk {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -312,6 +315,7 @@ header {
         text-align: center;
         border-radius: 4px;
         img {
+          width: 100%;
           border-radius: 4px;
         }
       }
@@ -320,6 +324,7 @@ header {
 }
 #event_wrap {
   width: 950px;
+  height: 310px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -349,7 +354,7 @@ header {
 }
 footer {
   width: 950px;
-  height: 200px;
+  height: 150px;
   margin: 0 auto;
   padding: 50px;
   .Introduction {
@@ -358,16 +363,16 @@ footer {
   .Information_bottom {
     font-size: 9pt;
     line-height: 20px;
+    color: #8f8c8ccf;
   }
 }
+//도서 타이틀, 작가이름
 .bk_1 {
   font-size: 9pt;
   text-align: left;
 }
-.bk_2 {
-  font-size: 9pt;
-  text-align: left;
-}
-.bk_3 {
-  font-size: 9pt;
+
+.ft_color {
+  color: #8f8c8ccf;
+  text-decoration: underline;
 }
