@@ -13,6 +13,7 @@ li {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 body {
@@ -21,11 +22,19 @@ body {
 header {
   width: 1200px;
   height: 96px;
+  position: sticky;
+  top: 0px;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  z-index: 10;
+  background-color: white;
 }
-
+.title1 {
+  padding: 20px 0;
+  font-size: 13pt;
+  font-weight: bold;
+}
 #Menu_wrap {
   width: 35%;
   display: flex;
@@ -184,7 +193,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
-  background-color: skyblue;
   .box_wrap {
     width: 1200px;
     margin: 20px auto;
@@ -197,8 +205,9 @@ header {
         width: 150px;
         height: 200px;
         text-align: center;
-        border-radius: 4px;
-        border: 1px solid #ddd;
+        img {
+          border-radius: 4px;
+        }
       }
     }
   }
@@ -208,7 +217,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
-  background-color: skyblue;
   .box_wrap {
     width: 1200px;
     margin: 20px auto;
@@ -221,8 +229,10 @@ header {
         width: 150px;
         height: 200px;
         text-align: center;
-        border-radius: 4px;
-        border: 1px solid #ddd;
+        border-radius: 3px;
+        img {
+          border-radius: 4px;
+        }
       }
     }
   }
@@ -232,11 +242,47 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
-  background-color: skyblue;
+  //   background-color: skyblue;
   .attention {
     width: 465px;
     height: 258px;
-    border: 1px solid #ddd;
+    position: relative;
+    .little_title {
+      position: absolute;
+      bottom: 4%;
+      left: 3%;
+      h2 {
+        font-size: 17pt;
+        max-width: 90px;
+        color: white;
+      }
+      .mx {
+        max-width: 100%;
+      }
+      .sub-title {
+        font-size: 8pt;
+        color: rgba(255, 255, 255, 0.572);
+        margin-top: 50px;
+      }
+      span {
+        font-size: 8pt;
+        color: white;
+        margin: 3px;
+      }
+      img {
+        width: 15px;
+      }
+      .badge {
+        width: 45px;
+      }
+      .little_little {
+        display: flex;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 3px;
+    }
   }
   .title2 {
     width: 950px;
@@ -252,7 +298,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
-  background-color: skyblue;
   .box_wrap {
     width: 1200px;
     margin: 20px auto;
@@ -266,7 +311,9 @@ header {
         height: 200px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid #ddd;
+        img {
+          border-radius: 4px;
+        }
       }
     }
   }
@@ -276,11 +323,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
-  background-color: skyblue;
   .attention2 {
     width: 465px;
     height: 258px;
-    border: 1px solid #ddd;
+    img {
+      width: 100%;
+    }
   }
   .title3 {
     width: 950px;
@@ -301,6 +349,25 @@ header {
 }
 footer {
   width: 950px;
+  height: 200px;
   margin: 0 auto;
-  font-size: 10pt;
+  padding: 50px;
+  .Introduction {
+    font-size: 10pt;
+  }
+  .Information_bottom {
+    font-size: 9pt;
+    line-height: 20px;
+  }
+}
+.bk_1 {
+  font-size: 9pt;
+  text-align: left;
+}
+.bk_2 {
+  font-size: 9pt;
+  text-align: left;
+}
+.bk_3 {
+  font-size: 9pt;
 }

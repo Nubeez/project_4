@@ -1,32 +1,32 @@
-var search;
-search = ["우주", "세계", "신비"];
+$(function () {
+  var search;
+  search = ["소설", "영화", "서울,도쿄"];
 
-for (i = 0; i < search.length; i++) {
-  $.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: {query: search[i]},
-    headers: {Authorization: "KakaoAK e324f5a360b2c811615c99a6e26fcc9e"},
-  }).done(function (books) {
-    var bk = document.getElementsByClassName("box" + i);
+  for (i = 0; i < search.length; i++) {
+    $.ajax({
+      method: "GET",
+      url: "https://dapi.kakao.com/v3/search/book?target=title",
+      data: {query: search[i]},
+      async: false,
+      headers: {Authorization: "KakaoAK e324f5a360b2c811615c99a6e26fcc9e"},
+    }).done(function (books) {
+      var bk = $(".box" + i);
 
-    for (j = 0; j < bk.length; j++) {
-      $(".box" + i)
-        .eq(j)
-        .append("<img src='" + books.documents[j].thumbnail + "'/>");
-      $(".box" + i)
-        .eq(j)
-        .append("<h3>" + books.documents[j].title + "</h3>");
-      $(".box" + i)
-        .eq(j)
-        .append("<h6>" + books.documents[j].authors + "</h6>");
+      for (j = 0; j < bk.length; j++) {
+        $(".box" + i)
+          .eq(j)
+          .append("<img src='" + books.documents[j].thumbnail + "'/>");
 
-      var str = books.documents[j].contents;
-      var str2 = str.substring(0, 60);
+        var str = books.documents[j].title;
+        var str1 = str.substring(0, 13);
 
-      $(".box" + i)
-        .eq(j)
-        .append("<p>" + str2 + "</p>");
-    }
-  });
-}
+        $(".box" + i)
+          .eq(j)
+          .append("<h5 class='bk_1'>" + str1 + "</h5>");
+        $(".box" + i)
+          .eq(j)
+          .append("<h6 class='bk_2'>" + books.documents[j].authors + "</h6>");
+      }
+    });
+  }
+});

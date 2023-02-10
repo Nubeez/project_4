@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/logo/logo.svg" />
     <!-- jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- css/scss사용 -->
@@ -98,7 +99,7 @@
             <!-- 슬라이드 끝 -->
             <!-- 기대신작 -->
             <div id="New">
-                <h3>기대신작 TOP</h3>
+                <h4 class="title1">기대신작 TOP</h4>
                 <div class="box_wrap">
                     <div class="boxs">
                         <div class="box0 box"></div>
@@ -128,7 +129,7 @@
             </div>
             <!-- 드라마,영화 보기전에! -->
             <div id="wait">
-                <h3>드라마,영화 보기전에!</h3>
+                <h4 class="title1">드라마,영화 보기전에!</h4>
                 <div class="box_wrap">
                     <div class="boxs">
                         <div class="box1 box"></div>
@@ -158,55 +159,72 @@
             </div>
             <!-- 2월2주 인기도서! -->
             <div id="popularity">
-                <h3>2월2주 인기도서!</h3>
+                <h4 class="title1">2월2주 인기도서!</h4>
                 <div class="title2">
                     <div class="attention">
-                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="img/books/resource.png" alt=""></a>
+                        <div class="little_title">
+                            <h2>불편한
+                                편의점</h2>
+                            <span class="sub-title">불편한데 가고 싶은 편의점이 있다?!</span>
+                            <br><br>
+                            <div class="little_little">
+                                <img src="img/books/Badge.svg" alt=""><span>책&#160;&#183;&#160;문학</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="attention">
-                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="img/books/resource2.png" alt=""></a>
+                        <div class="little_title ">
+                            <h2 class="mx">신비소설 무</h2>
+                            <span class="sub-title">레전드 오컬트의 귀환!</span>
+                            <br><br>
+                            <div class="little_little">
+                                <img src="img/books/Badge2.svg" alt="" class="badge"><span>책&#160;&#183;&#160;문학</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- 따끈한 업데이트작 -->
             <div id="update_bk">
-                <h3>따끈한 업데이트작</h3>
+                <h4 class="title1">따끈한 업데이트작</h4>
                 <div class="box_wrap">
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                     <div class="boxs">
-                        <div class="box1 box"></div>
+                        <div class="box2 box"></div>
                         <div class="box_num"></div>
                     </div>
                 </div>
             </div>
             <!-- 추천이벤트 -->
             <div id="event_wrap">
-                <h3>추천이벤트</h3>
+                <h4 class="title1">추천이벤트</h4>
                 <div class="title3">
                     <div class="attention2">
-                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="img/event/event1.png" alt=""></a>
                     </div>
                     <div class="attention2">
-                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="img/event/event2.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -216,17 +234,35 @@
             </div>
             <!-- 푸터 -->
             <footer>
-                회사소개
-                이용약관
-                개인정보처리방침
-                청소년보호정책
-                공지사항
+                <div class="Introduction">
+                    <a href=""><span>회사소개</span></a>
+                    <span>&#160;</span>
+                    <a href=""><span>이용약관</span></a>
+                    <span>&#160;</span>
+                    <a href=""><b>개인정보처리방침</b></a>
+                    <span>&#160;</span>
+                    <a href=""><span>청소년보호정책</span></a>
+                    <span>&#160;</span>
+                    <a href=""><span>공지사항</span></a>
+                </div>
                 <br>
-                <span>대표자 이진수,김성수</span>&#160;<span>&#124;</span>
-                <span>호스팅서비스사업자 (주)카카오엔터테인먼트</span>&#160;<span>&#124;</span>&#160;<span>사업자 정보 확인</span>
-                <p>사업자 등록 번호 220-88-02594<span>&#124;</span>&#160;<span>통신판매업신고 2018-성남분당B-0004</p>
-                대표전화 1644-4755|이메일 contact@kakaopage.com|경기도 성남시 분당구 판교역로 221
-                ⓒ Kakao Entertainment Corp.
+                <div class="Information_bottom">
+                    <span>대표자 이진수,김성수</span>&#160;<span>&#124;</span>
+                    <span>호스팅서비스사업자 (주)카카오엔터테인먼트</span>
+                    <span>&#160;&#124;&#160;</span>
+                    <span>사업자 정보 확인</span>
+                    <p>사업자 등록 번호 220-88-02594<span>&#160;&#124;</span>&#160;
+                        <span>통신판매업신고 2018-성남분당B-0004
+                    </p>
+                    <span>대표전화 1644-4755</span>
+                    <span>&#160;&#124;&#160;</span>
+                    <span>이메일 contact@kakaopage.com</span>
+                    <span>&#160;&#124;&#160;</span>
+                    <span>경기도 성남시 분당구 판교역로 221</span>
+                    <br><br>
+                    <p>ⓒ Kakao Entertainment Corp.</p>
+
+                </div>
             </footer>
         </section>
     </div>
