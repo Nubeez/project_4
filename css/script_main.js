@@ -21,7 +21,7 @@ $(function () {
   function next() {
     $(".panel")
       .stop()
-      .animate({marginLeft: -950}, 600, function () {
+      .animate({marginLeft: -950}, function () {
         $(".panel li:first").appendTo(".panel");
         $(".panel").css({marginLeft: 0});
       });
@@ -32,12 +32,27 @@ $(function () {
     pagenum.text(page);
     return false;
   }
+  setInterval(next, 6000);
 
-  $(".prev").click(function () {
-    prev();
-  });
+  // 슬라이드 next 무한클릭 막기
+  let click1 = true;
+  let click2 = true;
   $(".next").click(function () {
-    next();
+    if (click1) {
+      next();
+      click1 = !click1;
+      setTimeout(function () {
+        click1 = true;
+      }, 1000);
+    }
   });
-  //   setInterval(next, 6000);
+  $(".prev").click(function () {
+    if (click2) {
+      prev();
+      click2 = !click2;
+      setTimeout(function () {
+        click2 = true;
+      }, 1000);
+    }
+  });
 });
