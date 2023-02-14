@@ -89,6 +89,99 @@ header {
 #Search_wrap .event2 {
   margin-left: 25px;
 }
+#Search_wrap #shwrap {
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px 5px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 125%;
+  left: 0%;
+  z-index: 100;
+}
+#Search_wrap #shwrap .sh_word {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Search_wrap #shwrap .sh_word div {
+  padding: 15px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  cursor: pointer;
+}
+#Search_wrap #shwrap .sh_word .sh_border_line {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+#Search_wrap #shwrap #shbox_wrap {
+  width: 100%;
+}
+#Search_wrap #shwrap #shbox_wrap .shbox_new {
+  width: 100%;
+  height: 470px;
+}
+#Search_wrap #shwrap #shbox_wrap .shbox_new span {
+  font-size: 12px;
+  line-height: 450px;
+  display: flex;
+  justify-content: center;
+}
+#Search_wrap #shwrap #shbox_wrap .Sh_history {
+  width: 100%;
+  height: 485px;
+}
+#Search_wrap #shwrap #shbox_wrap .Sh_history .history_list {
+  width: 100%;
+  height: 95%;
+  font-weight: bold;
+  font-size: 9pt;
+  line-height: 53px;
+}
+#Search_wrap #shwrap #shbox_wrap .Sh_close_box {
+  width: 100%;
+  height: 30px;
+  border-radius: 0 0 10px 10px;
+  background: rgb(231, 231, 231);
+  font-size: 9pt;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  text-align: right;
+}
+#Search_wrap #shwrap #shbox_wrap .Sh_close_box span {
+  line-height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+#Search_wrap #shwrap #shbox_wrap .sh_close:hover {
+  opacity: 0.8;
+  color: rgba(143, 140, 140, 0.8117647059);
+}
+#Search_wrap #shwrap .listlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px;
+}
+#Search_wrap #shwrap .listlist span {
+  margin: 10px;
+  line-height: 25px;
+}
+#Search_wrap #shwrap .txt {
+  font-weight: 100;
+}
+#Search_wrap #shwrap .listlist:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#Search_wrap .offbox {
+  display: none;
+}
+#Search_wrap .onbox {
+  display: block;
+}
 
 #wrap {
   width: 100%;
@@ -98,12 +191,22 @@ header {
   margin: 0 auto;
   padding: 25px 72px 25px 120px;
 }
+#wrap .sub_wrap .sub_tab {
+  display: flex;
+  justify-content: flex-start;
+}
 #wrap .sub_wrap .sub_tab .icon_tab {
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid rgba(214, 214, 214, 0.54);
   border-radius: 18px;
   padding: 6px 12px 8px;
   text-align: center;
   font-size: 8.8pt;
+  margin-right: 3px;
+}
+
+.sub_close a:hover {
+  background: black;
+  color: white;
 }
 
 .on {
@@ -114,6 +217,7 @@ header {
   padding: 6px 12px 8px;
   text-align: center;
   font-size: 8.8pt;
+  margin-right: 3px;
 }
 
 #slide {
@@ -380,7 +484,7 @@ footer .Information_bottom {
 
 .bk_1 {
   font-size: 9pt;
-  text-align: left;
+  display: flex;
 }
 
 .ft_color {

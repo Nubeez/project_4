@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../img/logo/logo.svg" />
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- css/scss사용 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="shortcut icon" href="img/favi/Kakao_page_logo.ico" type="image/x-icon">
+    <!-- script -->
+    <script src="css/script_main.js"></script>
+    <!-- 책 불러오기 -->
+    <script src="css/sub_book.js"></script>
+    <!-- 웹사이트 제목 -->
+    <title>랭킹 &#124; 카카오페이지</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo/logo.svg" alt="logo" class="logo">
+        <ul id="Menu_wrap">
+            <a href="#">
+                <li>홈</li>
+            </a>
+            <a href="">
+                <li>웹툰</li>
+            </a>
+            <a href="">
+                <li>웹소설</li>
+            </a>
+            <a href="">
+                <li>책</li>
+            </a>
+        </ul>
+        <!-- 헤더 오른쪽 -->
+        <div id="Search_wrap">
+            <input type="text" placeholder="제목, 작가를 입력하세요." class="Search">
+            <!-- 헤더 검색 팝업 -->
+            <div id="shwrap" class="offbox">
+                <div class="sh_word">
+                    <div class="sh_lines">최근 검색어</div>
+                    <div class="sh_lines sh_border_line">인기 검색어</div>
+                </div>
+                <div id="shbox_wrap">
+                    <div class="shbox_new offbox tabbox"><span>최근 검색 내역이 없습니다.</span></div>
+                    <div class="Sh_history tabbox">
+                        <div class="history_list ">
+                            <div class="listlist"><span>1</span><span class="txt">나혼자만 레벨업</span>
+                            </div>
+                            <div class="listlist"><span>2</span><span class="txt">하얼빈</span></div>
+                            <div class="listlist"><span>3</span><span class="txt">불편한 편의점</span></div>
+                            <div class="listlist"><span>4</span><span class="txt">신비소설 무</span></div>
+                            <div class="listlist"><span>5</span><span class="txt">서울을 팔고 도쿄를 샀습니다</span></div>
+                            <div class="listlist"><span>6</span><span class="txt">사랑의 이해</span></div>
+                            <div class="listlist"><span>7</span><span class="txt">물에 갇힌 물고기</span></div>
+                            <div class="listlist"><span>8</span><span class="txt">도굴왕</span></div>
+                            <div class="listlist"><span>9</span><span class="txt">노엘의 다이어리</span></div>
+                            <div class="listlist"><span>10</span><span class="txt">어떤 개발자가 되고싶니?</span></div>
+                        </div>
+                    </div>
+                    <p class="Sh_close_box"><span class="sh_close">닫기</span></p>
+                </div>
+            </div>
+            <!-- 헤더 검색 팝업종료-->
+            <a href="">
+                <img src="img/outer/Magnifier.svg" alt="Magnifier" class="Magnifier">
+            </a>
+            <a href="" class="event1">
+                <img src="img/resource/resource_header_top.png" alt="event"></a>
+            <a href="">
+                <img src="img/resource/Stage.svg" alt="" class="event2">
+            </a>
+            <a href="">
+                <img src="img/resource/storage_box.svg" alt="storage_box" class="event2"></a>
+            <a href="">
+                <img src="img/resource/gift.svg" alt="gift" class="event2">
+            </a>
+            <a href="">
+                <img src="img/resource/mypage.svg" alt="mypage" class="event2">
+            </a>
+        </div>
+        <!-- 헤더 검색,이벤트,마이페이지 종료 -->
+    </header>
+    <section id="wrap">
+        <!-- 분류 -->
+        <div class="sub_wrap">
+            <div class="sub_tab">
+                <div class="sub_close"><a href="index.html" class="icon_tab">홈</a></div>
+                <div class="sub_close"><a href="#  " class=" icon_tab">연재</a></div>
+                <div class="sub_close"><a href="#" class=" icon_tab">베스트셀러</a></div>
+                <div class="sub_close"><a href="sub.html" class="on">랭킹</a></div>
+                <div class="sub_close"><a href="#" class=" icon_tab">분류전체</a></div>
+            </div>
+        </div>
+        <!-- 분류 끝-->
+        <div id="sub_Ranking">
+            <div class="subpg_title1">
+                <p>2023.02.14 기준</p>
+            </div>
+            <div class="box_wrap">
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ $(function () {
     $.ajax({
       method: "GET",
       url: "https://dapi.kakao.com/v3/search/book?target=title",
-      data: {query: search[i]},
+      data: {query: search[i], sort: "latest"},
       async: false,
       headers: {Authorization: "KakaoAK e324f5a360b2c811615c99a6e26fcc9e"},
     }).done(function (books) {
@@ -18,14 +18,14 @@ $(function () {
           .append("<img src='" + books.documents[j].thumbnail + "'/>");
 
         var str = books.documents[j].title;
-        var str1 = str.substring(0, 13);
+        var str1 = str.substring(0, 30);
 
         $(".box" + i)
           .eq(j)
-          .append("<h5 class='bk_1'>" + str1 + "</h5>");
+          .append("<p class=''>" + str1 + "</p>");
         $(".box" + i)
           .eq(j)
-          .append("<span class='bk_1'>" + books.documents[j].authors + "</span>");
+          .append("<span class=''>" + books.documents[j].authors + "</span>");
       }
     });
   }

@@ -49,6 +49,7 @@ header {
     color: black;
   }
 }
+// 검색내역 시작
 #Search_wrap {
   position: relative;
   display: flex;
@@ -84,23 +85,129 @@ header {
   .event2 {
     margin-left: 25px;
   }
+  #shwrap {
+    width: 260px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 5px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 125%;
+    left: 0%;
+    z-index: 100;
+    .sh_word {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      div {
+        padding: 15px 20px;
+        font-size: 15px;
+        border-bottom: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+      }
+      .sh_border_line {
+        border-bottom: 2px solid black;
+        font-weight: bold;
+      }
+    }
+    // sh.word end
+
+    // 세부검색내역
+    #shbox_wrap {
+      width: 100%;
+      .shbox_new {
+        width: 100%;
+        height: 470px;
+        span {
+          font-size: 12px;
+          line-height: 450px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .Sh_history {
+        width: 100%;
+        height: 485px;
+        .history_list {
+          width: 100%;
+          height: 95%;
+          font-weight: bold;
+          font-size: 9pt;
+          line-height: 53px;
+        }
+      }
+      .Sh_close_box {
+        width: 100%;
+        height: 30px;
+        border-radius: 0 0 10px 10px;
+        background: rgb(231, 231, 231);
+        font-size: 9pt;
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        text-align: right;
+        span {
+          line-height: 30px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+      }
+      .sh_close:hover {
+        opacity: 0.8;
+        color: #8f8c8ccf;
+      }
+    }
+    .listlist {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 10px;
+      span {
+        margin: 10px;
+        line-height: 25px;
+      }
+    }
+    .txt {
+      font-weight: 100;
+    }
+    .listlist:hover {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  // 박스 디스플레이 보여지게
+  .offbox {
+    display: none;
+  }
+  .onbox {
+    display: block;
+  }
 }
+// 검색내역 끝
 #wrap {
   width: 100%;
   .sub_wrap {
     width: 993px;
     margin: 0 auto;
     padding: 25px 72px 25px 120px;
+
     .sub_tab {
+      display: flex;
+      justify-content: flex-start;
       .icon_tab {
-        border: 1px solid rgb(214, 214, 214);
+        border: 1px solid rgb(214 214 214 / 54%);
         border-radius: 18px;
         padding: 6px 12px 8px;
         text-align: center;
         font-size: 8.8pt;
+        margin-right: 3px;
       }
     }
   }
+}
+.sub_close a:hover {
+  background: black;
+  color: white;
 }
 .on {
   border: none;
@@ -110,6 +217,7 @@ header {
   padding: 6px 12px 8px;
   text-align: center;
   font-size: 8.8pt;
+  margin-right: 3px;
 }
 #slide {
   width: 950px;
@@ -369,7 +477,7 @@ footer {
 //도서 타이틀, 작가이름
 .bk_1 {
   font-size: 9pt;
-  text-align: left;
+  display: flex;
 }
 
 .ft_color {

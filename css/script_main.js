@@ -55,4 +55,26 @@ $(function () {
       }, 1000);
     }
   });
+  // # 이동 제거
+  $("a").click(function () {
+    if ($(this).attr("href") == "#") {
+      return false;
+    }
+  });
+  // 클릭 시 라인추가
+  $(".sh_lines").click(function () {
+    $(this).addClass("sh_border_line").siblings().removeClass("sh_border_line");
+  });
+  // 클릭 시 shwrap 박스등장
+  $("#Search_wrap input").click(function () {
+    $("#shwrap").removeClass("offbox");
+  });
+  $(".sh_close").click(function () {
+    $("#shwrap").addClass("offbox");
+  });
+
+  $(".sh_lines").click(function () {
+    var idx = $(this).index();
+    $(".tabbox").eq(idx).removeClass("offbox").siblings("div").addClass("offbox");
+  });
 });
