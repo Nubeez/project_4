@@ -17,6 +17,10 @@
     align-content: space-between;
     .boxs {
       position: relative;
+      .box_num {
+        width: 500px;
+        height: 300px;
+      }
       .box {
         width: 350px;
         height: 200px;
