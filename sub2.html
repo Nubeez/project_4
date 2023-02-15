@@ -12,17 +12,26 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <!-- css/scss사용 -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/sub2.css">
     <link rel="shortcut icon" href="img/favi/Kakao_page_logo.ico" type="image/x-icon">
     <!-- script -->
     <script src="css/script_main.js"></script>
     <!-- 책 불러오기 -->
-    <script src="css/sub_book.js"></script>
+    <script src="css/sub2_book.js"></script>
     <!-- 웹사이트 제목 -->
     <title>랭킹 &#124; 카카오페이지</title>
 </head>
 
 <body>
+    <div class="bk_popup_box_wrap box_none">
+        <div id="background_popup">
+            <div id="bk_group_popup">
+                <div class="bk_group_sel bk_sel">업데이트 순<img src="img/outer/check.svg" alt="" class="bk_sel_img"></div>
+                <div class="bk_group_sel">등록일 순<img src="" alt="" class="bk_sel_img"></div>
+                <div class=" bk_group_sel bk_line"><a href="#" class="popup_cancel">취소</a></div>
+            </div>
+        </div>
+    </div>
     <header>
         <img src="img/logo/logo.svg" alt="logo" class="logo">
         <ul id="Menu_wrap">
@@ -95,15 +104,33 @@
                 <div class="sub_close"><a href="index.html" class="icon_tab">홈</a></div>
                 <div class="sub_close"><a href="#  " class=" icon_tab">연재</a></div>
                 <div class="sub_close"><a href="#" class=" icon_tab">베스트셀러</a></div>
-                <div class="sub_close"><a href="sub.html" class="on">랭킹</a></div>
-                <div class="sub_close"><a href="sub2.html" class=" icon_tab">분류전체</a></div>
+                <div class="sub_close"><a href="sub.html" class="icon_tab">랭킹</a></div>
+                <div class="sub_close"><a href="sub2.html   " class="on">분류전체</a></div>
             </div>
         </div>
         <!-- 분류 끝-->
-        <div id="sub_Ranking">
-            <div class="subpg_title1">
-                <p>2023.02.15 기준</p>
+        <!-- 서브 분류 탭 -->
+        <div id="bk_group_wrap">
+            <div class="bk_group_all">
+                <div class="bk_activebox bk_group">전체</div>
+                <div class="bk_group">소설</div>
+                <div class="bk_group">실용</div>
+                <div class="bk_group">학습</div>
             </div>
+        </div>
+        <div id="bk_num_date_wrap">
+            <div class="bk_group_num">
+                <p><span class="bk_volume"></span>개</p>
+            </div>
+            <div class="bk_group_update">
+                <a href="#bk_popup_box_wrap" class="click_popup">
+                    <p>업데이트 순 <img src="img/outer/under_Arrow.svg" alt=""></p>
+                </a>
+            </div>
+        </div>
+        <!-- 서브 분류 탭 끝-->
+        <!-- 서브 이미지 나열 -->
+        <div id="sub_group">
             <div class="box_wrap">
                 <div class="boxs">
                     <div class="box0 box"></div>
@@ -225,8 +252,81 @@
                     <div class="box0 box"></div>
                     <div class="box_num"></div>
                 </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
+                <div class="boxs">
+                    <div class="box0 box"></div>
+                    <div class="box_num"></div>
+                </div>
             </div>
         </div>
+        <!-- 서브 이미지 나열 끝 -->
         <!-- 배너 -->
         <div class="banner_dl">
             <a href="#"><img src="img/banner/Kakao_banner_bottom.png" alt=""></a>

@@ -92,4 +92,13 @@ $(function () {
     var idx = $(this).index();
     $(".tabbox").eq(idx).removeClass("offbox").siblings("div").addClass("offbox");
   });
+
+  $(".click_popup").click(function () {
+    $(".bk_popup_box_wrap").removeClass("box_none");
+    $("body").addClass("stop-scrolling");
+  });
+  $(".popup_cancel").click(function () {
+    $(".bk_popup_box_wrap").addClass("box_none");
+    $("body").removeClass("stop-scrolling");
+  });
 });

@@ -22,7 +22,7 @@ $(function () {
 
         $(".box_num")
           .eq(j)
-          .append("<h4 class=''>" + num_tx + "</h4>" + "<br>");
+          .append("<h2 class=''>" + num_tx + "</h2>" + "<br>");
 
         $(".box_num")
           .eq(j)
