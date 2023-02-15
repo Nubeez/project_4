@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  width: 1200px;
+  width: 1140px;
   height: 96px;
   position: sticky;
   top: 0px;
@@ -42,7 +42,6 @@ header {
   justify-content: flex-start;
 }
 #Menu_wrap li {
-  width: 100%;
   padding-left: 37px;
   font-size: 15px;
   font-weight: bold;
@@ -56,6 +55,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 50px;
+  line-height: 10px;
 }
 #Search_wrap .Search {
   width: 177px;
@@ -75,8 +75,8 @@ header {
 }
 #Search_wrap .Magnifier {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 24%;
+  left: 24%;
   transform: translateX(100%);
 }
 #Search_wrap .event1 {
@@ -84,10 +84,11 @@ header {
 }
 #Search_wrap .event1 img {
   width: 100%;
-  margin-left: 10px;
+  margin-left: 7px;
 }
 #Search_wrap .event2 {
-  margin-left: 25px;
+  margin-left: 30px;
+  margin-right: -6px;
 }
 #Search_wrap #shwrap {
   width: 260px;
@@ -276,6 +277,7 @@ header {
   font-size: 18px;
   background: #fff;
   display: flex;
+  position: relative;
 }
 .panel li {
   width: 950px;
@@ -349,6 +351,13 @@ header {
 #wait .box_wrap .boxs .box img {
   width: 100%;
   border-radius: 4px;
+}
+
+.test {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  border-radius: 3px;
 }
 
 #popularity {
@@ -490,4 +499,39 @@ footer .Information_bottom {
 .ft_color {
   color: rgba(143, 140, 140, 0.8117647059);
   text-decoration: underline;
+}
+
+.out {
+  width: 950px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.slide_txt {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.slide_txt p {
+  font-size: 9pt;
+  display: flex;
+  align-items: center;
+}
+.slide_txt span img {
+  width: 50px;
+  height: 50px;
+}
+.slide_txt .point_img {
+  width: 13px;
+}
+
+.textoff {
+  display: none;
 }

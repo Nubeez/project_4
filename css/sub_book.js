@@ -1,12 +1,12 @@
 $(function () {
   var search;
-  search = ["소설", "영화", "서울,도쿄"];
+  search = ["웹툰", "소설"];
 
   for (i = 0; i < search.length; i++) {
     $.ajax({
       method: "GET",
       url: "https://dapi.kakao.com/v3/search/book?target=title",
-      data: {query: search[i], sort: "latest"},
+      data: {query: search[i], size: 30},
       async: false,
       headers: {Authorization: "KakaoAK e324f5a360b2c811615c99a6e26fcc9e"},
     }).done(function (books) {
@@ -16,16 +16,21 @@ $(function () {
         $(".box" + i)
           .eq(j)
           .append("<img src='" + books.documents[j].thumbnail + "'/>");
-
         var str = books.documents[j].title;
-        var str1 = str.substring(0, 30);
+        var str1 = str.substring(0, 15);
+        var num_tx = j + 1;
 
-        $(".box" + i)
+        $(".box_num")
+          .eq(j)
+          .append("<h4 class=''>" + num_tx + "</h4>" + "<br>");
+
+        $(".box_num")
           .eq(j)
           .append("<p class=''>" + str1 + "</p>");
-        $(".box" + i)
+
+        $(".box_num")
           .eq(j)
-          .append("<span class=''>" + books.documents[j].authors + "</span>");
+          .append("<span class='sub_txt'>" + books.documents[j].authors + "</span>");
       }
     });
   }

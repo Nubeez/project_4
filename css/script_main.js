@@ -1,21 +1,26 @@
 $(function () {
   var pagenum = $(".slide_count b:first-of-type");
   var page = 1;
+  // 슬라이드+ 슬라이드 텍스트
   pagenum.text(page);
-  // 슬라이드
   function prev() {
     $(".panel li:last").prependTo(".panel");
     $(".panel").css("margin-left", -950);
     $(".panel").stop().animate({marginLeft: 0}, 600);
+
+    var txtidx = $(".panel").index();
+    $(".slide_txt")
+      .eq(txtidx)
+      .removeClass("textoff")
+      .parents("li")
+      .siblings()
+      .find(".slide_txt")
+      .addClass("textoff");
     page--;
     if (page < 1) {
       page = 4;
     }
     pagenum.text(page);
-
-    // if ($(pagenum).hasClass("show") == false) {
-    //   $(this).addClass("show");
-    // }
   }
 
   function next() {
@@ -24,6 +29,15 @@ $(function () {
       .animate({marginLeft: -950}, function () {
         $(".panel li:first").appendTo(".panel");
         $(".panel").css({marginLeft: 0});
+
+        var txtidx = $(".panel").index();
+        $(".slide_txt")
+          .eq(txtidx)
+          .removeClass("textoff")
+          .parents("li")
+          .siblings()
+          .find(".slide_txt")
+          .addClass("textoff");
       });
     page++;
     if (page > 4) {
@@ -32,6 +46,7 @@ $(function () {
     pagenum.text(page);
     return false;
   }
+
   setInterval(next, 6000);
 
   // 슬라이드 next 무한클릭 막기

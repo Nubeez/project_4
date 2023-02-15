@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 header {
-  width: 1200px;
+  width: 1140px;
   height: 96px;
   position: sticky;
   top: 0px;
@@ -40,7 +40,6 @@ header {
   display: flex;
   justify-content: flex-start;
   li {
-    width: 100%;
     padding-left: 37px;
     font-size: 15px;
     font-weight: bold;
@@ -55,6 +54,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 50px;
+  line-height: 10px;
 
   .Search {
     width: 177px;
@@ -71,19 +71,20 @@ header {
   }
   .Magnifier {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 24%;
+    left: 24%;
     transform: translateX(100%);
   }
   .event1 {
     width: 145px;
     img {
       width: 100%;
-      margin-left: 10px;
+      margin-left: 7px;
     }
   }
   .event2 {
-    margin-left: 25px;
+    margin-left: 30px;
+    margin-right: -6px;
   }
   #shwrap {
     width: 260px;
@@ -274,6 +275,7 @@ header {
   font-size: 18px;
   background: #fff;
   display: flex;
+  position: relative;
   li {
     width: 950px;
     height: 250px;
@@ -345,6 +347,12 @@ header {
       }
     }
   }
+}
+.test {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  border-radius: 3px;
 }
 #popularity {
   width: 950px;
@@ -483,4 +491,38 @@ footer {
 .ft_color {
   color: #8f8c8ccf;
   text-decoration: underline;
+}
+.out {
+  width: 950px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.slide_txt {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  p {
+    font-size: 9pt;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .point_img {
+    width: 13px;
+  }
+}
+.textoff {
+  display: none;
 }
