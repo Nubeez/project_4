@@ -8,12 +8,12 @@
     <meta property="og:image" content="../img/logo/logo.svg" />
     <!-- jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <!-- 카카오 -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <!-- css/scss사용 -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sub2.css">
     <link rel="shortcut icon" href="img/favi/Kakao_page_logo.ico" type="image/x-icon">
+    <!-- 카카오 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <!-- script -->
     <script src="css/script_main.js"></script>
     <!-- 책 불러오기 -->
@@ -111,12 +111,12 @@
         <!-- 분류 끝-->
         <!-- 서브 분류 탭 -->
         <div id="bk_group_wrap">
-            <div class="bk_group_all">
-                <div class="bk_activebox bk_group">전체</div>
-                <div class="bk_group">소설</div>
-                <div class="bk_group">실용</div>
-                <div class="bk_group">학습</div>
-            </div>
+            <ul class="bk_group_all">
+                <li class="bk_group bk_activebox" data-tab="tab-1">전체</li>
+                <li class="bk_group" data-tab="tab-2">소설</li>
+                <li class="bk_group" data-tab="tab-3">실용</li>
+                <li class="bk_group" data-tab="tab-4">학습</li>
+            </ul>
         </div>
         <div id="bk_num_date_wrap">
             <div class="bk_group_num">
@@ -129,201 +129,13 @@
             </div>
         </div>
         <!-- 서브 분류 탭 끝-->
-        <!-- 서브 이미지 나열 -->
+        <!-- 서브 도서 나열 -->
         <div id="sub_group">
             <div class="box_wrap">
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
-                <div class="boxs">
-                    <div class="box0 box"></div>
-                    <div class="box_num"></div>
-                </div>
+                <div id="tab-1" class="boxs"></div>
+                <div id="tab-2" class="boxs hides"></div>
+                <div id="tab-3" class="boxs hides"></div>
+                <div id="tab-4" class="boxs hides"></div>
             </div>
         </div>
         <!-- 서브 이미지 나열 끝 -->

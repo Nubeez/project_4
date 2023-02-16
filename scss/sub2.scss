@@ -9,20 +9,28 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    .boxs {
-      height: 270px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      .box {
+  }
+  .boxs {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    .box {
+      width: 140px;
+      margin: 6px;
+      img {
         width: 140px;
-        img {
-          width: 140px;
-          border-radius: 4px;
-        }
+        border-radius: 4px;
       }
     }
   }
+  .boxs .bk_activebox {
+    display: none;
+  }
+}
+.hides {
+  display: none;
 }
 .sub_txt {
   font-size: 10pt;

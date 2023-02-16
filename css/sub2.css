@@ -9,18 +9,27 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#sub_group .box_wrap .boxs {
-  height: 270px;
+#sub_group .boxs {
   position: relative;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
 }
-#sub_group .box_wrap .boxs .box {
+#sub_group .boxs .box {
   width: 140px;
+  margin: 6px;
 }
-#sub_group .box_wrap .boxs .box img {
+#sub_group .boxs .box img {
   width: 140px;
   border-radius: 4px;
+}
+#sub_group .boxs .bk_activebox {
+  display: none;
+}
+
+.hides {
+  display: none;
 }
 
 .sub_txt {
