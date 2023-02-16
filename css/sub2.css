@@ -9,23 +9,24 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#sub_group .boxs {
+#sub_group .bk_activebox {
+  display: none;
+}
+
+.boxs {
   position: relative;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
-#sub_group .boxs .box {
+.boxs .box {
   width: 140px;
   margin: 6px;
 }
-#sub_group .boxs .box img {
+.boxs .box img {
   width: 140px;
   border-radius: 4px;
-}
-#sub_group .boxs .bk_activebox {
-  display: none;
 }
 
 .hides {

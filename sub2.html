@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="../img/logo/logo.svg" />
+    <meta property="og:image" content="../img/logo/logo.svg">
     <!-- jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- css/scss사용 -->
@@ -15,9 +15,9 @@
     <!-- 카카오 -->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <!-- script -->
-    <script src="css/script_main.js"></script>
+    <script src="js/script_main.js"></script>
     <!-- 책 불러오기 -->
-    <script src="css/sub2_book.js"></script>
+    <script src="js/sub2_book.js"></script>
     <!-- 웹사이트 제목 -->
     <title>랭킹 &#124; 카카오페이지</title>
 </head>
@@ -27,7 +27,7 @@
         <div id="background_popup">
             <div id="bk_group_popup">
                 <div class="bk_group_sel bk_sel">업데이트 순<img src="img/outer/check.svg" alt="" class="bk_sel_img"></div>
-                <div class="bk_group_sel">등록일 순<img src="" alt="" class="bk_sel_img"></div>
+                <div class="bk_group_sel">등록일 순<img src="#" alt="" class="bk_sel_img"></div>
                 <div class=" bk_group_sel bk_line"><a href="#" class="popup_cancel">취소</a></div>
             </div>
         </div>
@@ -35,18 +35,10 @@
     <header>
         <img src="img/logo/logo.svg" alt="logo" class="logo">
         <ul id="Menu_wrap">
-            <a href="index.html">
-                <li>홈</li>
-            </a>
-            <a href="">
-                <li>웹툰</li>
-            </a>
-            <a href="">
-                <li>웹소설</li>
-            </a>
-            <a href="">
-                <li>책</li>
-            </a>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="">웹툰</a></li>
+            <li><a href="">웹소설</a></li>
+            <li><a href="index.html">책</a></li>
         </ul>
         <!-- 헤더 오른쪽 -->
         <div id="Search_wrap">
@@ -97,7 +89,7 @@
         </div>
         <!-- 헤더 검색,이벤트,마이페이지 종료 -->
     </header>
-    <section id="wrap">
+    <div id="wrap">
         <!-- 분류 -->
         <div class="sub_wrap">
             <div class="sub_tab">
@@ -113,7 +105,7 @@
         <div id="bk_group_wrap">
             <ul class="bk_group_all">
                 <li class="bk_group bk_activebox" data-tab="tab-1">전체</li>
-                <li class="bk_group" data-tab="tab-2">소설</li>
+                <li class=" bk_group" data-tab="tab-2">소설</li>
                 <li class="bk_group" data-tab="tab-3">실용</li>
                 <li class="bk_group" data-tab="tab-4">학습</li>
             </ul>
@@ -132,10 +124,10 @@
         <!-- 서브 도서 나열 -->
         <div id="sub_group">
             <div class="box_wrap">
-                <div id="tab-1" class="boxs"></div>
-                <div id="tab-2" class="boxs hides"></div>
-                <div id="tab-3" class="boxs hides"></div>
-                <div id="tab-4" class="boxs hides"></div>
+                <!-- <div id="tab-1" class="boxs "></div> -->
+                <div id="tab-2" class="boxs"></div>
+                <div id="tab-3" class="boxs"></div>
+                <div id="tab-4" class="boxs"></div>
             </div>
         </div>
         <!-- 서브 이미지 나열 끝 -->
@@ -175,6 +167,7 @@
 
             </div>
         </footer>
+    </div>
 </body>
 
 </html>

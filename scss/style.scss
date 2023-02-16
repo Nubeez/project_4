@@ -503,7 +503,7 @@ footer {
 .slide_txt {
   position: absolute;
   top: 30%;
-  left: 3%;
+  left: 4%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -514,9 +514,11 @@ footer {
     align-items: center;
   }
   span {
+    width: 120px;
     img {
       width: 50px;
       height: 50px;
+      margin-right: 10px;
     }
   }
   .point_img {
