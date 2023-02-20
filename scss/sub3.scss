@@ -60,10 +60,12 @@
       }
       .bk_text {
         width: 256px;
+        height: 249px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0px auto;
+        z-index: 1;
       }
       .bk_viewer {
         width: 256px;
@@ -106,6 +108,7 @@
         }
         .active {
           display: block;
+          padding: 5px;
         }
       }
       .bk_view_good1:active img {
@@ -122,7 +125,7 @@
         height: 56px;
         background-color: rgb(255 186 81);
         border-radius: 3px;
-        margin-top: 18px;
+        margin-top: 20px;
         .bk_buy_button_a {
           display: inline-block;
         }
@@ -148,48 +151,172 @@
       margin-bottom: 5px;
       .License_wrap {
         display: flex;
-        justify-content: center;
         align-items: center;
         font-size: 9pt;
+        padding: 10px;
+        img {
+          margin: 10px;
+        }
         .charging_button {
-          width: 75px;
-          height: 30px;
-          background-color: coral;
+          width: 70px;
+          height: 27px;
+          background-color: rgb(255 186 81);
           border-radius: 3px;
           text-align: center;
-          line-height: 28px;
+          line-height: 26px;
+          margin-left: 46px;
           span {
-            font-size: 9pt;
+            font-size: 8pt;
           }
         }
         .tiket_line {
           width: 1px;
           height: 10px;
+          margin: 5px;
           background-color: rgba(0, 0, 0, 0.1);
         }
       }
       .under_line {
+        text-decoration: underline;
+        font-size: 8pt;
+        margin-left: 20px;
+        span {
+          color: #999999;
+        }
       }
     }
   }
+
   .details_box_tab {
     width: 100%;
     height: 492px;
-    background-color: rgb(166, 240, 161);
+    background-color: #f7f7f7;
     margin-bottom: 3px;
+    overflow: hidden;
+    .tab_menu_wrap {
+      display: flex;
+      width: 200px;
+      height: 85px;
+      justify-content: space-evenly;
+      align-items: center;
+    }
   }
+
+  .tab_group_menu {
+    min-width: 45px;
+    min-height: 30px;
+    border: 1px solid rgba(224, 224, 224);
+    border-radius: 18px;
+    color: black;
+    text-align: center;
+    font-size: 9pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .plus_bg_black {
+    background-color: black;
+    color: white;
+  }
+
+  .plus_padding {
+    padding: 0px 12px;
+  }
+
+  .tab_menu_count {
+    display: flex;
+    width: 40px;
+    height: 0;
+    font-size: 8pt;
+    justify-content: space-evenly;
+    margin-left: 6px;
+    color: #999999;
+  }
+
+  .tab_menu_filter {
+    display: flex;
+    font-size: 8pt;
+    justify-content: flex-end;
+    img {
+      margin: -2px;
+      padding-right: 13px;
+    }
+  }
+
+  .tab_menu_filter_sub1 {
+    margin: 1px;
+    span {
+      margin-right: 2px;
+    }
+  }
+
+  .bk_sub_img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub_boxs {
+    display: flex;
+    align-items: center;
+  }
+  .aaa {
+    display: flex;
+    align-items: center;
+    img {
+      margin: 20px 5px 0px 15px;
+      height: 95px;
+      border-radius: 5px;
+    }
+  }
+
+  .box_num {
+    line-height: 8px;
+
+    p {
+      font-size: 9pt;
+      margin: 10px;
+    }
+    span {
+      font-size: 8pt;
+      color: #999999;
+      margin: 10px;
+    }
+  }
+
+  .box_num2 {
+    line-height: 8px;
+
+    p {
+      font-size: 9pt;
+      margin: 10px;
+    }
+    span {
+      font-size: 8pt;
+      color: #999999;
+      margin: 10px;
+    }
+  }
+
+  .space_down {
+    margin: 10px;
+  }
+
   .details_box_tab2 {
     width: 100%;
     height: 280px;
     background-color: rgb(20, 172, 253);
     margin-bottom: 3px;
   }
+
   .details_box_tab3 {
     width: 100%;
     height: 280px;
     background-color: rgb(112, 42, 225);
     margin-bottom: 3px;
   }
+
   .details_box_tab4 {
     width: 100%;
     height: 875px;

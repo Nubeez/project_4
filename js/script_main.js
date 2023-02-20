@@ -47,7 +47,7 @@ $(function () {
     return false;
   }
 
-  //   setInterval(next, 6000);
+  setInterval(next, 6000);
 
   // 슬라이드 next 무한클릭 막기
   let click1 = true;
