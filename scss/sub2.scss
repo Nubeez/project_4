@@ -80,13 +80,13 @@
   }
 }
 .bk_popup_box_wrap {
-  #background_popup {
+  .background_popup {
     width: 100%;
     height: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.755);
     z-index: 150;
-    #bk_group_popup {
+    .bk_group_popup {
       width: 350px;
       height: 200px;
       border: 1px solid white;

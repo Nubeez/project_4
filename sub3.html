@@ -29,6 +29,15 @@
 </head>
 
 <body>
+    <div class="bk_popup_box_wrap box_none">
+        <div class="background_popup">
+            <div class="bk_group_popup">
+                <div class="bk_group_sel bk_sel">최신순<img src="img/outer/check.svg" alt="" class="bk_sel_img"></div>
+                <div class="bk_group_sel">좋아요순<img src="#" alt="" class="bk_sel_img"></div>
+                <div class=" bk_group_sel bk_line"><a href="#" class="popup_cancel">취소</a></div>
+            </div>
+        </div>
+    </div>
     <header>
         <a href="index.html">
             <img src="img/logo/logo.svg" alt="logo" class="logo">
@@ -97,7 +106,7 @@
                         <img src="img/details_book/book_resource1.jpg" alt="">
                     </div>
                     <div class="bk_bg_blur"></div>
-                    <div class="bk_img1"><img src="img/details_book/book_resource2.jpg" alt=""></div>
+                    <div class="bk_img1"></div>
                     <div class="bk_text">
                         <h3>아버지의 해방일지 [단행본]</h1>
                             <div class="bk_viewer"><img src="img/details_book/viewer.svg" alt=""><span
@@ -138,67 +147,101 @@
                         <div class="tab_group_menu plus_padding data-tab='tab-2'">작품소개</div>
                         <div class="tab_group_menu data-tab='tab-3'">소식</div>
                     </div>
-                    <div class="tab_menu_count">
-                        <span>전체</span>
-                        <span>2</span>
+                    <div class="tab_home">
+                        <div class="tab_menu_count">
+                            <span>전체</span>
+                            <span>2</span>
+                        </div>
+                        <div class="tab_menu_filter">
+                            <div class="tab_menu_filter_sub1">
+                                <span>구매한 회차</span>
+                                <span><img src="img/outer/Inactive_btn.svg" alt=""></span>
+                            </div>
+                            <div class="tab_menu_filter_sub1">
+                                <span>첫화부터</span>
+                                <span><img src="img/outer/under_Arrow.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="bk_sub_img">
+                            <div class="sub_boxs">
+                                <a href="#">
+                                    <div class="aaa">
+                                        <div class="box_num"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sub_boxs">
+                                <a href="#">
+                                    <div class="aaa">
+                                        <div class="box_num2"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab_menu_filter">
-                        <div class="tab_menu_filter_sub1">
-                            <span>구매한 회차</span>
-                            <span><img src="img/outer/Inactive_btn.svg" alt=""></span>
-                        </div>
-                        <div class="tab_menu_filter_sub1">
-                            <span>첫화부터</span>
-                            <span><img src="img/outer/under_Arrow.svg" alt=""></span>
-                        </div>
-                    </div>
-                    <div class="bk_sub_img">
-                        <div class="sub_boxs">
-                            <a href="#">
-                                <div class="aaa">
-                                    <div class="box_num"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="sub_boxs">
-                            <a href="#">
-                                <div class="aaa">
-                                    <div class="box_num2"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="details_box_tab2 ">
-                    <div>이 작품을 본 유저들이 많이 보는 책</div>
+                    <div class="bk_slide_title">이 작품을 본 유저들이 많이 보는 책</div>
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
-                            <div class="swiper-slide">Slide 10</div>
-                            <div class="swiper-slide">Slide 11</div>
-                            <div class="swiper-slide">Slide 12</div>
-                            <div class="swiper-slide">Slide 13</div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
+                            <div class="swiper-slide box0"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"><img src="img/outer/next.svg" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/outer/prev.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="details_box_tab3">
-                    <div></div>
-                    <div></div>
+                    <div class="bk_slide_title">도서 TOP</div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                            <div class="swiper-slide box1"></div>
+                        </div>
+                        <div class="swiper-button-next"><img src="img/outer/next.svg" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/outer/prev.svg" alt=""></div>
+                    </div>
                 </div>
                 <div class="details_box_tab4">
-                    <div></div>
-                    <div></div>
+                    <span class="bk_Comments">댓글 (4)</span>
+                    <div class="tab_menu_wrap2">
+                        <div class="tab_group_menu2 plus_padding2 data-tab='tab-1'">BEST</div>
+                        <div class="tab_group_menu2  plus_bg_black data-tab='tab-2'">전체</div>
+                        <div class="bk_group_update">
+                            <a href="#bk_popup_box_wrap" class="click_popup">
+                                <p>최신순<img src="img/outer/under_Arrow.svg" alt=""></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bk_Search_wrap">
+                        <input type="text" class="bk_Search_box" placeholder="댓글을 입력해주세요." />
+                        <span class="bk_Search_submit">등록</span>
+                    </div>
                     <div></div>
                     <div></div>
                     <div>
