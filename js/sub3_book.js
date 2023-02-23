@@ -1,4 +1,5 @@
 $(function () {
+  // 홈 탭 도서 api
   $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -16,6 +17,7 @@ $(function () {
     $(".box_num2").append("<p>" + "2022.11.02" + "</p>");
   });
 
+  // 왼쪽 상단 하트 클릭 시 이미지 변경
   $(".good_icon_2").on("click", function () {
     let attrurl = $(".good_icon_2").attr("src");
     if (attrurl == "img/details_book/alarm_active.svg") {
@@ -25,6 +27,7 @@ $(function () {
     }
   });
 
+  // 최신순 클릭 시 팝업창
   $(".bk_view_good1").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
@@ -38,30 +41,45 @@ $(function () {
     }
   });
 
-  $(".tab_group_menu").click(function () {
-    var sub_tab_id = $(this).attr("data-tab");
-
-    $(".tab_group_menu").removeClass("plus_bg_black");
-    $(".boxs").addClass("hides");
-
-    $(this).addClass("plus_bg_black");
-    $("#" + sub_tab_id).removeClass("hides");
-  });
-
-  $(".tab_group_menu2").click(function () {
-    var sub_tab_id2 = $(this).attr("data-tab");
-
-    $(".tab_group_menu2").removeClass("plus_bg_black");
-    $(".boxs").addClass("hides");
-
-    $(this).addClass("plus_bg_black");
-    $("#" + sub_tab_id2).removeClass("hides");
-  });
-
+  // 팝업창
   $(".bk_group:nth-of-type(1)").click(function () {
     $(".boxs").removeClass("hides");
   });
 
+  // 탭버튼1
+  $(".tab_group_menu").click(function () {
+    var sub_tab_id = $(this).attr("data-tab");
+
+    $(".tab_group_menu").removeClass("plus_bg_black");
+    $(".tab_home").addClass("tab_hide");
+
+    $(this).addClass("plus_bg_black");
+    $("#" + sub_tab_id).removeClass("tab_hide");
+  });
+
+  // 탭버튼2
+  $(".tab_group_menu2").click(function () {
+    var sub_tab_id2 = $(this).attr("data-tab");
+
+    $(".tab_group_menu2").removeClass("plus_bg_black");
+    $(".bk_Comments_wrap").addClass("tab_hide");
+
+    $(this).addClass("plus_bg_black");
+    $("#" + sub_tab_id2).removeClass("tab_hide");
+  });
+
+  //탭클릭 시 서브3페이지 일부 display-none
+  $(".tab_group_menu:nth-of-type(3)").click(function () {
+    $(".bk_breakdown").addClass("tab_hide");
+    $(".details_box_tab2").addClass("tab_hide");
+    $(".details_box_tab3").addClass("tab_hide");
+    $(".details_box_tab4").addClass("tab_hide");
+  });
+  $(".tab_group_menu:nth-of-type(1)").click(function () {
+    $(".bk_breakdown").removeClass("tab_hide");
+  });
+
+  // 플러그인
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 5,
     spaceBetween: 0,
@@ -71,6 +89,7 @@ $(function () {
     },
   });
 
+  // 중간 슬라이드 도서 api
   var search;
   search = ["소설", "레벨"];
 
@@ -93,7 +112,6 @@ $(function () {
         var str1 = str.substring(0, 14);
 
         var title_min = books.documents[j].authors[0];
-        // var title_min2 = title_min.substring(0, 14);
 
         $(".box" + i)
           .eq(j)

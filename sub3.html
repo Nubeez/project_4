@@ -143,11 +143,11 @@
             <div class="details_box2">
                 <div class="details_box_tab">
                     <div class="tab_menu_wrap">
-                        <div class="tab_group_menu plus_bg_black data-tab='tab-1'">홈</div>
-                        <div class="tab_group_menu plus_padding data-tab='tab-2'">작품소개</div>
-                        <div class="tab_group_menu data-tab='tab-3'">소식</div>
+                        <div class="tab_group_menu plus_bg_black" data-tab='tab-0'>홈</div>
+                        <div class="tab_group_menu plus_padding" data-tab='tab-1'>작품소개</div>
+                        <div class="tab_group_menu" data-tab='tab-2'>소식</div>
                     </div>
-                    <div class="tab_home">
+                    <div id="tab-0" class="tab_home">
                         <div class="tab_menu_count">
                             <span>전체</span>
                             <span>2</span>
@@ -179,7 +179,17 @@
                             </div>
                         </div>
                     </div>
-
+                    <div id="tab-1" class="tab_home tab_hide">2</div>
+                    <div id="tab-2" class="tab_home tab_hide">
+                        <div class="bk_Notice">
+                            <div class="Notice_title">
+                                <h5>작품 공지</h5>
+                            </div>
+                            <div class="Notice_title">
+                                <p>등록된 공지사항이 없습니다.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="details_box_tab2 ">
                     <div class="bk_slide_title">이 작품을 본 유저들이 많이 보는 책</div>
@@ -228,10 +238,11 @@
                     </div>
                 </div>
                 <div class="details_box_tab4">
-                    <span class="bk_Comments">댓글 (4)</span>
+                    <div class="bk_Comment_wrap"><span class="bk_Comments">댓글 (4)</span></div>
+
                     <div class="tab_menu_wrap2">
-                        <div class="tab_group_menu2 plus_padding2 data-tab='tab-1'">BEST</div>
-                        <div class="tab_group_menu2  plus_bg_black data-tab='tab-2'">전체</div>
+                        <div class="tab_group_menu2 plus_padding2" data-tab='tab-01'>BEST</div>
+                        <div class="tab_group_menu2 plus_bg_black" data-tab='tab-00'>전체</div>
                         <div class="bk_group_update">
                             <a href="#bk_popup_box_wrap" class="click_popup">
                                 <p>최신순<img src="img/outer/under_Arrow.svg" alt=""></p>
@@ -242,15 +253,142 @@
                         <input type="text" class="bk_Search_box" placeholder="댓글을 입력해주세요." />
                         <span class="bk_Search_submit">등록</span>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="bk_Comments_page_wrap">
+                        <div id="tab-00" class="bk_Comments_wrap">
+                            <div class="bk_Comment_user">
+                                <div class="bk_profile">
+                                    <img src="img/outer/man_profile.png" alt="profile_img" class="bk_profile_img">
+                                </div>
+                                <div class="bk_Comment_user_ment">
+                                    <div class="bk_name_day_sort">
+                                        <h5>独孤求梦</h5>
+                                        <span class="bk_Comment_day">2022.12.03</span>
+                                    </div>
+                                    <p>
+                                        나의 해방은 아직 오지 않았슴을,<br>
+                                        아버지의 해방이 평안하기를,<br>
+                                        해방은 해빙解冰의 오타이기를!<br>
+                                    </p>
+                                    <span class="bk_Comment_title">아버지의 해방일지</span>
+                                    <div class="bk_like_plus_wrap">
+                                        <div class="bk_like_wrap">
+                                            <img src="img/outer/like_disable.svg" alt="like_img">
+                                            <span>1</span>
+                                            <img src="img/outer/Comments_disable.svg" alt="Comment">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="bk_profile_report">
+                                            <img src="img/outer/profile_many.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bk_boundary_line_wrap">
+                                <div class="bk_boundary_line"></div>
+                            </div>
+                            <!-- 유저2 -->
+                            <div class="bk_Comment_user">
+                                <div class="bk_profile">
+                                    <img src="img/outer/man_profile.png" alt="profile_img" class="bk_profile_img">
+                                </div>
+                                <div class="bk_Comment_user_ment">
+                                    <div class="bk_name_day_sort">
+                                        <h5>4485</h5>
+                                        <span class="bk_Comment_day">2022.12.03</span>
+                                    </div>
+                                    <p>
+                                        잔짜 재미있게 읽었어요<br>
+                                        역시 글도 유머가 있어야 함을 알게 되었네요ㅎㅎ
+                                    </p>
+                                    <span class="bk_Comment_title">[체험판] 아버지의 해방일지</span>
+                                    <div class="bk_like_plus_wrap">
+                                        <div class="bk_like_wrap">
+                                            <img src="img/outer/like_disable.svg" alt="like_img">
+                                            <span>좋아요</span>
+                                            <img src="img/outer/Comments_disable.svg" alt="Comment">
+                                            <span>댓글 달기</span>
+                                        </div>
+                                        <div class="bk_profile_report">
+                                            <img src="img/outer/profile_many.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bk_boundary_line_wrap">
+                                <div class="bk_boundary_line"></div>
+                            </div>
+                            <div class="bk_Comment_user">
+                                <div class="bk_profile">
+                                    <img src="img/outer/man_profile.png" alt="profile_img" class="bk_profile_img">
+                                </div>
+                                <div class="bk_Comment_user_ment">
+                                    <div class="bk_name_day_sort">
+                                        <h5>legend</h5>
+                                        <span class="bk_Comment_day">2022.12.03</span>
+                                    </div>
+                                    <p>
+                                        근현대사 역사 과정이 가볍게ㅜ전개 되는 경험을 했어요. 빨치산 아버지의 오지랖이 이시대에서 필요한<br>
+                                        실천이자 덕목이 아닐까... 후기ㅡ읽고 눈물이 났어요.
+                                    </p>
+                                    <span class="bk_Comment_title">아버지의 해방일지 [단행본]</span>
+                                    <div class="bk_like_plus_wrap">
+                                        <div class="bk_like_wrap">
+                                            <img src="img/outer/like_disable.svg" alt="like_img">
+                                            <span>좋아요</span>
+                                            <img src="img/outer/Comments_disable.svg" alt="Comment">
+                                            <span>댓글 달기</span>
+                                        </div>
+                                        <div class="bk_profile_report">
+                                            <img src="img/outer/profile_many.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bk_boundary_line_wrap">
+                                <div class="bk_boundary_line"></div>
+                            </div>
+                            <div class="bk_Comment_user">
+                                <div class="bk_profile">
+                                    <img src="img/outer/man_profile.png" alt="profile_img" class="bk_profile_img">
+                                </div>
+                                <div class="bk_Comment_user_ment">
+                                    <div class="bk_name_day_sort">
+                                        <h5>뿅뿅</h5>
+                                        <span class="bk_Comment_day">2022.12.03</span>
+                                    </div>
+                                    <p>
+                                        서점에서 베스트라고 해서 사볼까 했는데<br>
+                                        여기서 보네요~~ㅎㅎ<br>
+                                        보다보니 재미있어서 쭉 보게 되요~~
+                                    </p>
+                                    <span class="bk_Comment_title">[체험판] 아버지의 해방일지</span>
+                                    <div class="bk_like_plus_wrap">
+                                        <div class="bk_like_wrap">
+                                            <img src="img/outer/like_disable.svg" alt="like_img">
+                                            <span>좋아요</span>
+                                            <img src="img/outer/Comments_disable.svg" alt="Comment">
+                                            <span>댓글 달기</span>
+                                        </div>
+                                        <div class="bk_profile_report">
+                                            <img src="img/outer/profile_many.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bk_boundary_line_wrap">
+                                <div class="bk_boundary_line"></div>
+                            </div>
+                            <div class="bk_Comment_list_num"><span>1</span>
+                            </div>
+                        </div>
+                        <!-- Best 댓글 -->
+                        <div id="tab-01" class="bk_Comments_wrap tab_hide">
+                            <div class="bk_best_like_Comment">
+                                <p>Best 댓글이 없습니다.</p>
+                                <span>좋아요를 눌러 Best댓글을 만들어주세요!</span>
+                            </div>
+                        </div>
                     </div>
-                    <div></div>
                 </div>
             </div>
             <div class="banner_dl">
