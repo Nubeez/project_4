@@ -10,11 +10,11 @@
     .details_box1 {
       width: 320px;
       overflow: hidden;
-      position: relative;
       .bk_bg_bg {
         height: 592px;
         background-color: #f7f7f7;
         margin-bottom: 5px;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
       }
@@ -23,7 +23,6 @@
         height: 320px;
         filter: blur(8px);
         position: relative;
-        overflow: hidden;
         img {
           width: 325px;
           height: 325px;
@@ -36,12 +35,12 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: black;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
         opacity: 0.3;
       }
       .bk_img1 {
         position: absolute;
-        top: 4.2%;
+        top: 12.2%;
         left: 24.5%;
         img {
           width: 160px;
@@ -50,9 +49,9 @@
       }
       .bk_bg_blur {
         content: "";
-        height: 238px;
+        height: 200px;
         position: absolute;
-        top: 7%;
+        top: 23%;
         left: 0;
         bottom: 0;
         right: 0;
@@ -197,6 +196,9 @@
     background-color: #f7f7f7;
     margin-bottom: 3px;
     overflow: hidden;
+    &.height_auto {
+      height: 592px;
+    }
   }
   .tab_menu_wrap {
     display: flex;
@@ -221,10 +223,74 @@
   .tab_hide {
     display: none;
   }
+  // 상단 탭 2번 작품소개
+  .bk_present {
+    padding: 1rem 2rem;
+    .bk_title_present {
+      font-size: 11pt;
+      margin-bottom: 15px;
+    }
+    .bk_txt_Box {
+      font-size: 7pt;
+      white-space: pre-wrap;
+    }
+    .bk_title_content {
+      font-size: 9pt;
+    }
+  }
+  .bk_title_content_line_wrap {
+    padding-right: 1rem;
+    padding-top: 5rem;
+    .bk_title_content_line {
+      width: 100%;
+      height: 1px;
+      background: #e3e3e3;
+    }
+  }
+  .bk_detailed_info_wrap {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    .bk_detail_info {
+      h5 {
+        padding: 2rem 0 2rem 0;
+      }
+    }
+    .bk_writer_info {
+      h5 {
+        padding: 2rem 0 2rem 0;
+      }
+    }
+  }
+  .bk_info_flex {
+    display: flex;
+    align-items: baseline;
+    span {
+      font-size: 9pt;
+    }
+    p {
+      font-size: 9pt;
+      color: #999999;
+      margin: 0 5px 5px 0;
+    }
+  }
+  .bk_info_line {
+    background-color: #cdcccc;
+    height: 9px;
+    width: 1px;
+    margin: 0px 5px 0 5px;
+  }
+  // 상단 탭 3번 작품공지
   .bk_Notice {
     padding: 1rem 2rem;
-    .Notice_title{
-        font-size: 11pt;
+    .Notice_title {
+      font-size: 11pt;
+      .bk_Notice_flex {
+        height: 435px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
   .Notice_content {
@@ -519,6 +585,7 @@
     }
   }
 }
+
 .bk_best_like_Comment {
   display: flex;
   flex-direction: column;

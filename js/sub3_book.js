@@ -15,8 +15,15 @@ $(function () {
 
     $(".box_num2").append("<p>" + msg.documents[0].title + "<p/>");
     $(".box_num2").append("<p>" + "2022.11.02" + "</p>");
+    $(".bk_writer_group").append("<span>" + msg.documents[0].authors + "<span/>");
+    $(".bk_info_group").append("<span>" + msg.documents[0].price + "원/권 당<span/>" + "<br/>");
+    $(".bk_info_group2").append("<span>" + msg.documents[0].publisher + "<span/>");
   });
-
+    // 작품소개 겟방식 불러오기
+  $.get("./txt/bk_contents.txt", function (data) {
+    $("#bk_txt_Box").html(data);
+  });
+  
   // 왼쪽 상단 하트 클릭 시 이미지 변경
   $(".good_icon_2").on("click", function () {
     let attrurl = $(".good_icon_2").attr("src");
@@ -68,15 +75,20 @@ $(function () {
     $("#" + sub_tab_id2).removeClass("tab_hide");
   });
 
-  //탭클릭 시 서브3페이지 일부 display-none
+  //탭클릭 시 서브3 페이지 일부 display-none,크기조절
   $(".tab_group_menu:nth-of-type(3)").click(function () {
     $(".bk_breakdown").addClass("tab_hide");
+    $(".details_box_tab").addClass("height_auto");
     $(".details_box_tab2").addClass("tab_hide");
     $(".details_box_tab3").addClass("tab_hide");
     $(".details_box_tab4").addClass("tab_hide");
   });
   $(".tab_group_menu:nth-of-type(1)").click(function () {
     $(".bk_breakdown").removeClass("tab_hide");
+    $(".details_box_tab").removeClass("height_auto");
+    $(".details_box_tab2").removeClass("tab_hide");
+    $(".details_box_tab3").removeClass("tab_hide");
+    $(".details_box_tab4").removeClass("tab_hide");
   });
 
   // 플러그인
