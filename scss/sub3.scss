@@ -188,6 +188,12 @@
         }
       }
     }
+    .bk_breakdown2 {
+      width: 320px;
+      height: calc(100% - 632px);
+      background-color: #f7f7f7;
+      margin-bottom: 5px;
+    }
   }
 
   .details_box_tab {
@@ -198,6 +204,10 @@
     overflow: hidden;
     &.height_auto {
       height: 592px;
+    }
+    &.height_auto2 {
+      height: 792px;
+      margin-bottom: 30px;
     }
   }
   .tab_menu_wrap {
@@ -230,8 +240,8 @@
       font-size: 11pt;
       margin-bottom: 15px;
     }
-    .bk_txt_Box {
-      font-size: 7pt;
+    #bk_txt_Box {
+      font-size: 9pt;
       white-space: pre-wrap;
     }
     .bk_title_content {
