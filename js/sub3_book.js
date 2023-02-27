@@ -19,7 +19,7 @@ $(function () {
     $(".bk_info_group").append("<span>" + msg.documents[0].price + "원/권 당<span/>" + "<br/>");
     $(".bk_info_group2").append("<span>" + msg.documents[0].publisher + "<span/>");
   });
-  // 작품소개 겟방식 불러오기
+  // 작품소개 get 방식 불러오기
   $.get("./txt/bk_contents.txt", function (data) {
     $("#bk_txt_Box").html(data);
   });
