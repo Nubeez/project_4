@@ -225,7 +225,6 @@
 }
 .content_wrap .tab_home {
   width: 100%;
-  height: 100%;
 }
 .content_wrap .tab_hide {
   display: none;
@@ -246,7 +245,7 @@
 }
 .content_wrap .bk_title_content_line_wrap {
   padding-right: 1rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .content_wrap .bk_title_content_line_wrap .bk_title_content_line {
   width: 100%;
