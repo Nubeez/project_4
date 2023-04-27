@@ -9,13 +9,7 @@ $(function () {
     $(".panel").stop().animate({marginLeft: 0}, 600);
 
     var txtidx = $(".panel").index();
-    $(".slide_txt")
-      .eq(txtidx)
-      .removeClass("textoff")
-      .parents("li")
-      .siblings()
-      .find(".slide_txt")
-      .addClass("textoff");
+    $(".slide_txt").eq(txtidx).removeClass("textoff").parents("li").siblings().find(".slide_txt").addClass("textoff");
     page--;
     if (page < 1) {
       page = 4;
@@ -31,13 +25,7 @@ $(function () {
         $(".panel").css({marginLeft: 0});
 
         var txtidx = $(".panel").index();
-        $(".slide_txt")
-          .eq(txtidx)
-          .removeClass("textoff")
-          .parents("li")
-          .siblings()
-          .find(".slide_txt")
-          .addClass("textoff");
+        $(".slide_txt").eq(txtidx).removeClass("textoff").parents("li").siblings().find(".slide_txt").addClass("textoff");
       });
     page++;
     if (page > 4) {
@@ -70,6 +58,7 @@ $(function () {
       }, 1000);
     }
   });
+
   // # 이동 제거
   $("a").click(function () {
     if ($(this).attr("href") == "#") {
@@ -102,3 +91,4 @@ $(function () {
     $("body").removeClass("stop-scrolling");
   });
 });
+
